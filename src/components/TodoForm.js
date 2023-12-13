@@ -6,7 +6,6 @@ const TodoForm = (props) => {
     const [input, setInput] = useState(props.edit ? props.edit.value : '')
 
     const inputRef = useRef(null)
-
     useEffect(() => {
         inputRef.current.focus()
     })

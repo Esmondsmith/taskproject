@@ -23,7 +23,7 @@ function TodoList() {
         setTodos(previous => previous.map(item =>(item.id === todoId ? newValue : item)))
     }
 
-
+    //Function to delete to-do
     const removeTodo = id => {
         const removeArr = [...todos].filter(todo => todo.id !== id)
         setTodos(removeArr);
